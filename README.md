@@ -3,7 +3,7 @@
 Sitio web profesional para un DJ ubicado en Estados Unidos con temática inspirada en One Piece (sin usar imágenes con copyright). Incluye información de contacto, Instagram, Facebook y SoundCloud.
 
 ## Requisitos
-- Node.js 18+
+- Node.js 16+ (compatibilidad con Vite 4)
 
 ## Ejecutar en local
 ```bash
@@ -16,6 +16,25 @@ Abre http://localhost:5173
 ```bash
 npm run build
 npm run preview
+```
+
+## Deploy en Render (Static Site)
+- Publish Directory: `dist`
+- Build Command: `npm ci && npm run build`
+- Redirect/Rewrites: `/* -> /index.html`
+
+Con blueprint (opcional) usando `render.yaml` en la raíz:
+
+```yaml
+services:
+	- type: static
+		name: dj-dixson
+		buildCommand: npm ci && npm run build
+		publishPath: dist
+		routes:
+			- type: rewrite
+				source: /*
+				destination: /index.html
 ```
 
 ## Personalización rápida
