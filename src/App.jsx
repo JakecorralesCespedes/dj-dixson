@@ -10,11 +10,11 @@ export default function App() {
   // Configura aquí la info del DJ
   const profile = {
   name: 'DJ Dixson',
-  phone: '+1 (555) 555-5555',
-  instagram: 'https://instagram.com/djdixson',
-  facebook: 'https://facebook.com/djdixson',
-  soundcloud: 'https://soundcloud.com/djdixson',
-  youtube: 'https://youtube.com/@djdixson',
+  phone: '+1 (203) 243-0201',
+  instagram: 'https://www.instagram.com/djdixson?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+  facebook: 'https://www.facebook.com/dixson.corrales.5/about',
+  soundcloud: 'https://soundcloud.com/dixson-corrales?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+  youtube: 'https://youtube.com/@djdixson2512?si=zwRrO09FgnKp_-So',
   location: 'Estados Unidos',
   };
 
